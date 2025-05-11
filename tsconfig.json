@@ -12,6 +12,6 @@
     "forceConsistentCasingInFileNames": true,
     "lib": ["ES6", "DOM"]
   },
-  "include": ["src/**/*.ts", "test/**/*.ts", "jest.d.ts", "db/**/*.ts"],
+  "include": ["src/**/*.ts"],
   "exclude": ["node_modules", "build"]
 }

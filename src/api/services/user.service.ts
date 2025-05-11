@@ -41,7 +41,7 @@ class UserService extends BaseService {
     companyId?: mongoose.Types.ObjectId;
   }): Promise<IUser> {
     const {name, email, password, role, companyRole} = data;
-    let {companyId} = data;
+    const {companyId} = data;
 
     let user = new UserModel({
       name,

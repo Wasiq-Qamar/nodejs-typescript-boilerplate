@@ -8,10 +8,7 @@ import {ErrorManager, getEncryptedApiKey} from '../../utils';
 class AuthenticationMiddleware {
   constructor() {}
 
-  authenticate(
-    req: Request | any,
-    allowedRoles: UserRole[],
-  ): Promise<JwtToken> {
+  authenticate(req: Request, allowedRoles: UserRole[]): Promise<JwtToken> {
     const token = req.header('x-auth-token');
     const headerKey = req.header('x-api-key');
     const secretKey = config.secretKey;
