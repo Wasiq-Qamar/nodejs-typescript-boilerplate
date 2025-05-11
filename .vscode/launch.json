@@ -1,0 +1,11 @@
+{
+    "version": "2.0.0",
+    "configurations": [
+        {
+            "name": "Debug Backend",
+            "type": "node-terminal",
+            "request": "launch",
+            "command": "npm run dev:debug"
+          }
+    ]
+}

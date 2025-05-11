@@ -1,0 +1,17 @@
+{
+  "extends": "./node_modules/gts/tsconfig-google.json",
+  "compilerOptions": {
+    "rootDir": ".",
+    "outDir": "build",
+    "strict": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "forceConsistentCasingInFileNames": true,
+    "lib": ["ES6", "DOM"]
+  },
+  "include": ["src/**/*.ts", "test/**/*.ts", "jest.d.ts", "db/**/*.ts"],
+  "exclude": ["node_modules", "build"]
+}
